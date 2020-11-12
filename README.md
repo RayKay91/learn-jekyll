@@ -54,7 +54,7 @@ layout: default
 
 You can set default layouts and have them apply automatically:
 
-````
+```
 defaults:
 - scope:
     path: ""
@@ -70,9 +70,7 @@ defaults:
     path: ""
   values:
     layout: "default"
-    ```
-
-
+```
 
 ### Includes
 
@@ -225,4 +223,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 and copy \_site to the server.
-````
+
+```
+
+```
