@@ -175,6 +175,7 @@ Then create a .md document for each one.
 Example:
 in \_authors/jill.md
 
+```
 ---
 
 short_name: Jill
@@ -184,6 +185,7 @@ position: Chief Editor
 ---
 
 Jill is a fruit grower in Scotland.
+```
 
 By default, collections don't output a page for documents. In this case we want each author to have their own page so we tweak the collection configuration.
 
@@ -223,7 +225,3 @@ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 and copy \_site to the server.
-
-```
-
-```
