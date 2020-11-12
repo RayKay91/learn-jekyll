@@ -80,7 +80,7 @@ The include tag allows you to include content from another file stored in the '\
 
 Create a \_includes folder and in there you can create partials with an .html tag. Then in the even you want to access it, in the html file you are trying to include it in:
 
-````
+```
 
 {% include NAMEOFFILE.html %}
 
@@ -225,3 +225,4 @@ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 and copy \_site to the server.
+````
