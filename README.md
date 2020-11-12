@@ -197,4 +197,31 @@ collections:
     output: true
 ```
 
-You can link between different types of files
+You can link between different types of file. Check docs for this.
+
+### Deploying
+
+The environment for the site by default is 'development'. To change to 'production':
+In Terminal:
+
+```
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+You can access the environment in the website at jekyll.enivronment and then have logic and control flow based on the resulting environment.
+
+Example: So to only output the analytics script on production you would do the following:
+
+```
+{% if jekyll.environment == "production" %}
+  <script src="my-analytics-script.js"></script>
+{% endif %}
+```
+
+To deploy - run:
+
+```
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+and copy \_site to the server.
